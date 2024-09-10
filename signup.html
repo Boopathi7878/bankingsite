@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System - Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Create New Account</h2>
+        <form action="/signup" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="account_number" placeholder="Account Number" required>
+            <input type="text" name="account_holder_name" placeholder="Account Holder Name" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="mobile_number" placeholder="Mobile Number" required>
+            <input type="number" name="balance" placeholder="Initial Balance" required>
+            <input type="text" name="card_number" placeholder="Card Number" required>
+            <input type="text" name="card_holder_name" placeholder="Card Holder Name" required>
+            <input type="text" name="expiration_date" placeholder="Expiration Date (MM/YY)" required>
+            <input type="text" name="cvv" placeholder="CVV" required>
+            <input type="text" name="card_type" placeholder="Card Type (Visa/MasterCard)" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="/">Login here</a></p>
+    </div>
+</body>
+</html>
